@@ -1,0 +1,15 @@
+{
+  "name": "variaveis-operadores",
+  "version": "1.0.0",
+  "description": "Este repositório contém a resolução de 4 exercícios propostos durante o Bootcamp FullStack JavaScript.   Cada exercício aborda conceitos fundamentais da linguagem JavaScript, com foco em Variáveis e Operadores.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
