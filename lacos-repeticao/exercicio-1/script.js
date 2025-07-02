@@ -1,5 +1,5 @@
 //"configuração"
-const readline = require("readline-sync")
+const readline = require("readline-sync");
 // dados de entrada
 // ler 2 numero inteiros
 const message = ("\n===== Buscador de Múltiplos de 3 e 5 em um intervalo =====\n");
