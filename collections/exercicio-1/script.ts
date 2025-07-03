@@ -5,7 +5,7 @@ import readline = require("readline-sync");
 
 const colors: Array<string> = new Array<string>();
 //input 
-console.log("===== Ordenar cores =====");
+console.log("===== Ordenar cores =====\n");
 for(let i=1; i<=5; i++){
 
     let color = readline.question(`Digite a ${i}ª cor: `);
