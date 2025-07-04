@@ -19,7 +19,7 @@ while (option !== 0) {
             listClient();
             break;
         case 3:
-            nextClient();
+            removeClient();
             break;
         case 4:
             clients.clear();
@@ -40,7 +40,7 @@ function menu() {
     console.log("\n========== Sistema atendimento ==========");
     console.log("1 - Adicionar um novo Cliente.");
     console.log("2 - Listar todos os Clientes.");
-    console.log("3 - Chamar cliente para ser atendido");
+    console.log("3 - Remover cliente da fila");
     console.log("4 - Limpar lista de cliente");
     console.log("0 - O programa deve ser finalizado.");
     console.log();
@@ -54,19 +54,19 @@ function addClient() {
 function listClient() {
     let valid = clients.isEmpty();
     if (valid) {
-        console.log("Não há clientes na espera de ser atendido.")
+        console.log("Não há clientes na fila.")
     } else {
-        console.log("Lista de Clientes para ser atendido: :");
+        console.log("Lista de Clientes na fila: :");
         clients.printQueue();
     }
 
 }
-function nextClient() {
+function removeClient() {
     if (clients.count() == 0) {
-        console.log("\nNão há clientes para ser atendido.");
+        console.log("\nNão há clientes na fila");
     } else {
-        let nextClient = clients.peek();
-        console.log(`O cliente ${nextClient} deve ser chamado para atendimento.`);
+        clients.dequeue();
+        console.log("Cliente removido da fila.");
     }
 }
 
