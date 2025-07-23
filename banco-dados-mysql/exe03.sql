@@ -35,4 +35,4 @@ SELECT * FROM tb_estudantes WHERE nota < 7.00;
 SELECT nome, nota FROM tb_estudantes WHERE nota < 7.00;
 SELECT nome, nota FROM tb_estudantes WHERE nota > 7.00;
 
-UPDATE tb_estudantes SET nota = 8.00 WHERE MATRICULA = 7; 
+UPDATE tb_estudantes SET nota = 8.00 WHERE matricula = 7; 
